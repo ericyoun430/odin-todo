@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="column-container">
+      <header>
+        <img class="header-checkbox" src="todo-items/header/checkbox.png">
+        <h1>To-Do</h1>
+      </header>
+
+      <div class="row-container">
+        <nav class="column-nav">
+          <div class="project-item">
+            <span class="project-name">Main</span>
+            <img class="project-arrow" src="./todo-items/project/arrow-down.png">
+          </div>
+
+          <svg class="project-add" fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512">
+            <g>
+              <g>
+                <path d="M256,11C120.9,11,11,120.9,11,256s109.9,245,245,245s245-109.9,245-245S391.1,11,256,11z M256,460.2    c-112.6,0-204.2-91.6-204.2-204.2S143.4,51.8,256,51.8S460.2,143.4,460.2,256S368.6,460.2,256,460.2z"/>
+                <path d="m357.6,235.6h-81.2v-81.2c0-11.3-9.1-20.4-20.4-20.4-11.3,0-20.4,9.1-20.4,20.4v81.2h-81.2c-11.3,0-20.4,9.1-20.4,20.4s9.1,20.4 20.4,20.4h81.2v81.2c0,11.3 9.1,20.4 20.4,20.4 11.3,0 20.4-9.1 20.4-20.4v-81.2h81.2c11.3,0 20.4-9.1 20.4-20.4s-9.1-20.4-20.4-20.4z"/>
+              </g>
+            </g>
+          </svg>
+          
+        </nav>
+
+        <div class="todo-outer-container">
+          <div class="todo-inner-container">
+            <div class="todo-item">
+              <div class="todo-properties">
+                <span class="todo-item-name">Test</span>
+                <span class="todo-item-date">10/9/23</span>
+              </div>
+              <input type="checkbox" class="todo-item-checkbox">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
