@@ -53,15 +53,21 @@ h1 {
     z-index: 1;
 }
 
-.project-item {
+.project-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 0px 0px 10px 0px;
 }
 
-.project-name {
-    font-size: 17px;
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.project-header-text {
+    font-size: 20px;
 }
 
 .project-arrow {
@@ -69,10 +75,53 @@ h1 {
     height: 16px;
 }
 
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.project-name {
+    font-size: 18px;
+}
+
+.circle {
+    /* display: inline-block; 
+    line-height: 0px;  */
+    border-radius: 100%; 
+    width: 18px;
+    height: 18px;
+    /* border: 1px solid rgb(151, 151, 151); */
+    /* background-color: rgb(254, 186, 69); */
+    background-color: black;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.project-count {
+    font-size: 5;
+}
+
 .project-add {
     width: 25px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.project-input {
+    
 }
 
 /*To-Do Item List*/
